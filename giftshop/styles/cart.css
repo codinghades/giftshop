@@ -1,0 +1,222 @@
+
+.cart-page{
+    margin: 1rem 5rem;
+    min-height: 100vh;
+}
+
+.heading{
+    display: flex;
+    gap: 36rem;
+}
+
+hr{
+    border: 1px solid rgb(209, 208, 208);
+    margin-left: -0px;
+    width: 73rem;
+}
+
+.cart-main{
+    gap: 1rem;
+    display: flex;
+}
+
+.cart-main-left{
+    width: 55%;
+}
+
+.cart-product{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin-bottom: 1rem;
+    height: 16rem;
+    width: 40rem;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.cart-product .left{
+    color: black;
+    width: 17rem;
+}
+
+.cart-product .left img{
+    margin: 1rem;
+    height: 14rem;
+    width: 13rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-product .right{
+    height: 100%;
+    padding-left: 1rem;
+    color: black;
+    display: inline;
+    width: 30rem;
+}
+
+.cart-product .right .title{
+    height: 3.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.cart-product .right .descp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    margin-top: -20px;
+    height: 5.5rem;
+}
+
+.cart-product .right .right-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-product .right .product-price{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cart-product .right .qtyBtn{
+    background-color: none;
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.qtyBtn:active{
+    background-color: gainsboro;
+}
+
+.cart-product .right .removeBtn{
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    background-color: rgb(199, 29, 29);
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin-right: 1rem;
+}
+
+.cart-product .right .removeBtn:hover{
+    background-color: rgb(218, 67, 67);
+
+}
+
+.cart-main-right{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex{
+    width: 30rem;
+    height: 23rem;
+    font-size: .7rem;
+}
+
+.flex .inputBox{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.flex .inputBox .inputs{
+    width: 100%;
+}
+
+.flex .inputBox .inputs label{
+    font-size: 1rem;
+}
+
+.inputBox .inputs input, select{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .5rem 3rem .5rem .5rem;
+}
+
+.inputBox .inputs input, select{
+    display: block;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.inputBox .inputs input:focus, select:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #000000;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.inputs select{
+    padding-right: 5.7rem;
+}
+
+.flex .btn{
+    color: white;
+    background-color: #000000;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.375rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.flex .btn:hover{
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+    text-decoration: none;
+}
+.modal {
+    display: none;  /* Hidden by default */
+    position: fixed; 
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
