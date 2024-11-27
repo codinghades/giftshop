@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Jaro", sans-serif;
+    background-color:#ffffff;
+    box-sizing: border-box;
+}
+
+
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+  
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #313030;
+}
+  
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.header-one{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    height: 3.5rem;
+    display: flex;
+    gap: 11rem;
+    align-items: center;
+    padding: 0 44px;
+}
+
+.header-one .left, .center, .right{
+    color: rgb(121, 243, 121);
+    display: flex;                          
+    gap: .7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h5{
+    margin-top: 10px;
+}
+
+.center, .right{
+    color: rgb(245, 219, 132);
+}
+
+.right h5{
+    margin-top: 20px;
+}
+
+.text p{
+    margin-top: -1.5rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+span{
+    width: 1px;
+    height: 33px;
+    opacity: .4;
+    margin: 0 12px;
+}
+
+.home-section{
+    background-image: url(../images/bg.png);
+    background-size: cover;
+}
+
+.nav-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 5rem .2rem 5rem;
+    justify-content: space-between;
+}
+
+.nav-section .left{
+    display: flex;
+    align-items: center;
+}
+
+.left .nav-logo{
+    margin-right: 2rem;
+}
+
+.left .nav-logo img{
+    height: 80px;
+    width: 120px;
+}
+
+.nav-links a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+    position: relative;
+}
+
+
+.nav-links a:after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #313030;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s;
+}
+
+.nav-links a:hover:after {
+    width: 100%;
+}
+
+
+.nav-section .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.right .search-bar .search {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 2px;
+    width: 16rem;
+    padding: .4rem;
+    position: relative;
+}
+
+.search-bar .search-btn{
+    position: absolute;
+    background-color: black;
+    border: none;
+    background-image: url(../images/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: .65rem 1.2rem;
+    border-radius: 0 2px 0 0;
+    margin-left: -4px;
+    cursor: pointer;
+} 
+
+.right .cart a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.right .cart .cartItem{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(184, 25, 25);
+    position: absolute;
+    top: -40%;
+    left: 60%;
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.right .nav-users a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.nav-users .btn-login::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #313030;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s;
+}
+
+.nav-users .btn-login:hover:after {
+    width: 100%;
+}
+
+.nav-users .btn-login{
+    margin-right: 2rem;
+}
+
+.nav-users .btn-signup{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .3rem 1.3rem;
+}
+
+.nav-users .username{
+    color: black;
+}
+
+#loginMessage{
+    position: absolute;
+    display: none;
+    color: rgb(204, 35, 35);
+    text-align: center;
+    margin-left: 63rem;
+}
