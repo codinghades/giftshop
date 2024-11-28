@@ -1,0 +1,13 @@
+
+.shop-filter{
+    margin-left: 2rem;
+}
+.filter-sort{
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: .5rem;
+    margin: 10px;
+    font-family: Jaro;
+    outline: none;
+    transition: .5s;
+}

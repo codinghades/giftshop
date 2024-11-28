@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Jaro", sans-serif;
+    background-color:#ffffff;
+    box-sizing: border-box;
+}
+
+
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+  
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #313030;
+}
+  
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.header-one{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    height: 3.5rem;
+    display: flex;
+    gap: 11rem;
+    align-items: center;
+    padding: 0 44px;
+}
+
+.header-one .left, .center, .right{
+    color: rgb(121, 243, 121);
+    display: flex;                          
+    gap: .7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h5{
+    margin-top: 10px;
+}
+
+.center, .right{
+    color: rgb(245, 219, 132);
+}
+
+.right h5{
+    margin-top: 20px;
+}
+
+.text p{
+    margin-top: -1.5rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+span{
+    width: 1px;
+    height: 33px;
+    opacity: .4;
+    margin: 0 12px;
+}
+
+.home-section{
+    background-image: url(../images/bg.png);
+    background-size: cover;
+}
+
+.nav-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 5rem .2rem 5rem;
+    justify-content: space-between;
+}
+
+.nav-section .left{
+    display: flex;
+    align-items: center;
+}
+
+.left .nav-logo{
+    margin-right: 2rem;
+}
+
+.left .nav-logo img{
+    height: 80px;
+    width: 120px;
+}
+
+.nav-links a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+    position: relative;
+}
+
+
+.nav-links a:after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #313030;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s;
+}
+
+.nav-links a:hover:after {
+    width: 100%;
+}
+
+
+.nav-section .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.right .search-bar .search {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 2px;
+    width: 16rem;
+    padding: .4rem;
+    position: relative;
+}
+
+.search-bar .search-btn{
+    position: absolute;
+    background-color: black;
+    border: none;
+    background-image: url(../images/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: .65rem 1.2rem;
+    border-radius: 0 2px 0 0;
+    margin-left: -4px;
+    cursor: pointer;
+} 
+
+.right .cart a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.right .cart .cartItem{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(184, 25, 25);
+    position: absolute;
+    top: -40%;
+    left: 60%;
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.right .nav-users a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.nav-users .btn-login::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #313030;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s;
+}
+
+.nav-users .btn-login:hover:after {
+    width: 100%;
+}
+
+.nav-users .btn-login{
+    margin-right: 2rem;
+}
+
+.nav-users .btn-signup{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .3rem 1.3rem;
+}
+
+.nav-users .username{
+    color: black;
+}
+
+#loginMessage{
+    position: absolute;
+    display: none;
+    color: rgb(204, 35, 35);
+    text-align: center;
+    margin-left: 63rem;
+}
+
+.anime-container { 
+    display: flex; 
+    flex-direction: column;
+    background-color: #ffffff; 
+    padding: 30px; 
+    font-family: Arial, sans-serif; 
+}
+
+.image-section{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.anime-group img { 
+    filter: brightness(70%);
+    object-fit: cover;
+    background-size: cover; 
+    height: 330px;
+    width: 500px;
+    border-radius: 10px;
+    transition: .4s;
+} 
+
+.anime-group img:hover{
+    filter: brightness(100%);
+    transform: scale(1.05);
+}
+
+
+.anime-container .text-section { 
+    font-family: Poppins;
+    flex: 1rem; 
+    margin: 1rem;
+    color: #202020;
+} 
+
+.anime-container .text-section h1 { 
+    font-size: 2em; 
+    margin-top: -.7rem;
+} 
+
+.anime-container .text-section p { 
+    height: 10rem;
+    font-size: 1em; 
+    margin-bottom: 20px; 
+} 
+
+.anime-container .button-container { 
+    display: flex; 
+    margin-top: 2.4rem;
+    gap: 10px; 
+} 
+
+.anime-container .button { 
+    color: #000000; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transition: .4s;
+    border: 1px solid black;
+} 
+
+.anime-container .button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.05);
+}
+
+.anime-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #dbdbdb;
+    overflow: hidden;
+}
+
+
+.footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 7rem;
+    grid-template-columns: 300px 200px 200px 200px 200px;
+}
+
+.footer-box a, p{
+    text-decoration: none;
+    color: inherit;
+    font-size: .9rem;
+}
+
+.footer-box a:hover{
+    text-decoration: underline;
+}
+
+.footer-box img{
+    height: 80px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.copyright{
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    text-align: center;
+    color: gray;
+    border-top: 1px solid gray;
+}
+
+.icons{
+    margin: 1rem;
+    
+}
+
+.icons a{
+    margin-right: .8rem;
+    font-size: 1.5rem;
+    color: #b8b8b8;
+}
+
+.subscribe{
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 1.02rem;
+    border: 1px solid #b8b8b8;
+    position: relative;
+}
